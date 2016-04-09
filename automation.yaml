@@ -1,0 +1,80 @@
+- alias: Turn on Coffee Machine
+  trigger:
+    platform: time
+    after: '06:45'
+  condition:
+    platform: time
+    weekday:
+    - 'mon'
+    - 'tue'
+    - 'wed'
+    - 'thu'
+    - 'fri'
+  action:
+    service: switch.turn_on
+    entity_id: switch.coffee
+
+- alias: Turn on Coffee Machine WE
+  trigger:
+    platform: time
+    after: '07:30'
+  condition:
+    platform: time
+    weekday:
+    - 'sat'
+    - 'sun'
+  action:
+    service: switch.turn_on
+    entity_id: switch.coffee
+
+- alias: Turn off Coffee Machine
+  trigger:
+    platform: time
+    after: '08:00'
+  condition:
+    platform: time
+    weekday:
+    - 'mon'
+    - 'tue'
+    - 'wed'
+    - 'thu'
+    - 'fri'
+  action:
+    service: switch.turn_off
+    entity_id: switch.coffee
+
+- alias: Turn off Coffee Machine WE
+  trigger:
+    platform: time
+    after: '09:45'
+  condition:
+    platform: time
+    weekday:
+    - 'sat'
+    - 'sun'
+  action:
+    service: notify.notify
+    data:
+      message: Something just happened, better take a look!
+
+- alias: Turn on Outside light
+  trigger:
+    platform: sun
+    event: sunset
+    offset: '+00:30:00'
+  condition:
+    platform: time
+    before: '21:00'
+  action:
+    service: switch.turn_on
+    entity_id: switch.garden
+
+- alias: Turn off Outside light
+  trigger:
+    platform: time
+    after: '21:00'
+  action:
+    service: switch.turn_off
+    entity_id: switch.garden
+
+

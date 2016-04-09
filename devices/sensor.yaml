@@ -1,0 +1,62 @@
+# Prediction of weather
+- platform: yr
+  monitored_conditions:
+    - temperature
+    - windDirection
+
+- name: Forecast
+  platform: forecast
+  api_key: 960791c75c0a8e6fa3188d8de8465930
+  monitored_conditions:
+    - summary
+    - precip_probability
+    - temperature
+    - apparent_temperature
+
+- name: UPS Voltage
+  platform: apcupsd
+  type: linev
+
+- name: UPS Load
+  platform: apcupsd
+  type: loadpct
+
+- name: UPS Time Left
+  platform: apcupsd
+  type: timeleft
+
+- platform: nest
+  monitored_conditions:
+    - 'temperature'
+    - 'target'
+
+- name: 'coffee'
+  platform: command_line
+  command: 'python -m pyvemono --server coffeepwr --op get --value watts'
+  unit_of_measurement: "W"
+
+- name: 'hifi'
+  platform: command_line
+  command: 'python -m pyvemono --server hifipwr --op get --value watts'
+  unit_of_measurement: "W"
+
+- name: "10232 Netmeter"
+  platform: mqtt
+  state_topic: "10232/energy/demand"
+  qos: 0
+  unit_of_measurement: "W"
+  value_template: '{{ value_json.val | multiply(1000) }}'
+
+- name: "10238 Netmeter"
+  platform: mqtt
+  state_topic: "10238/energy/demand"
+  qos: 0
+  unit_of_measurement: "W"
+  value_template: '{{ value_json.val | multiply(1000) }}'
+
+- name: "10232"
+  platform: ted5000
+  host: ted5000
+  resources:
+  - power.mtu1
+  - voltage.mtu1

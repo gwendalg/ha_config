@@ -1,0 +1,65 @@
+power_sensors:
+  name: power
+  entities:
+    - sensor.10232_power1
+    - sensor.10232_netmeter
+    - sensor.10238_netmeter
+    - sensor.coffee
+    - sensor.hifi
+
+weather:
+  entities:
+    - sun.sun
+    - sensor.yr_temperature
+    - sensor.yr_wind_direction
+    - sensor.weather_summary
+
+default_view:
+  view: True
+  entities:
+    - group.weather
+    - group.power_sensors
+    - media_player.cinema
+
+kitchen:
+  view: True
+  entities:
+    - media_player.castaudio
+    - switch.coffee
+    - switch.hifi
+
+mummy:
+  view: True
+  entities:
+    - sensor.home_target
+    - sensor.home_temperature
+    - binary_sensor.home_fan
+    - binary_sensor.home_hvac_ac_state
+    - thermostat.home
+ 
+basement:
+  view: True
+  entities:
+    - switch.subwoofer
+    - switch.projector
+    - switch.amplifier
+    - switch.player
+    - media_player.home_theater
+    - media_player.avr
+    - media_player.projector
+    - media_player.plex
+
+backend_sensors:
+  name: power
+  entities:
+    - sensor.ups_load
+    - sensor.ups_time_left
+    - sensor.ups_voltage
+    - sensor.10232_voltage1
+
+backend:
+  view: True
+  entities:
+    - group.backend_sensors
+    - switch.ggnas
+    - switch.garden

@@ -1,0 +1,19 @@
+- platform: plex
+- platform: cast
+- name: avr
+  platform: anthem
+  port: /dev/ampli
+- name: projector
+  platform: epson
+  port: /dev/projector
+
+- name: cinema
+  platform: universal
+  children:
+    - media_player.avr
+    - media_player.projector
+  commands:
+    turn_on:
+      service: script.cinema_on
+    turn_off:
+      service: script.cinema_off

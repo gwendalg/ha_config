@@ -1,0 +1,48 @@
+cinema_on:
+  sequence:
+    - alias: Switch on subwoofer
+      service: switch.turn_on
+      data:
+        entity_id: switch.subwoofer
+    - alias: Switch on avr
+      service: switch.turn_on
+      data:
+        entity_id: switch.amplifier
+    - alias: Switch on projector
+      service: switch.turn_on
+      data:
+        entity_id: switch.projector
+    - delay:
+        minutes: 1
+    - alias: Turn on avr
+      service: media_player.turn_on
+      data:
+        entity_id: media_player.avr
+    - alias: Turn on projector
+      service: media_player.turn_on
+      data:
+        entity_id: media_player.projector
+cinema_off:
+  sequence:
+    - alias: Turn off projector
+      service: media_player.turn_off
+      data:
+        entity_id: media_player.projector
+    - alias: Turn off avr
+      service: media_player.turn_off
+      data:
+        entity_id: media_player.avr
+    - delay:
+        minutes: 3
+    - alias: Switch off projector
+      service: switch.turn_off
+      data:
+        entity_id: switch.projector
+    - alias: Switch off avr
+      service: switch.turn_off
+      data:
+        entity_id: switch.amplifier
+    - alias: Switch off subwoofer
+      service: switch.turn_off
+      data:
+        entity_id: switch.subwoofer
