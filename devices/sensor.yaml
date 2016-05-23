@@ -30,16 +30,6 @@
     - 'temperature'
     - 'target'
 
-- name: 'coffee'
-  platform: command_line
-  command: 'python -m pyvemono --server coffeepwr --op get --value watts'
-  unit_of_measurement: "W"
-
-- name: 'hifi'
-  platform: command_line
-  command: 'python -m pyvemono --server hifipwr --op get --value watts'
-  unit_of_measurement: "W"
-
 - name: "10232 Netmeter"
   platform: mqtt
   state_topic: "10232/energy/demand"

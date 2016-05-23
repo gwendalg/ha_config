@@ -12,7 +12,7 @@
     - 'fri'
   action:
     service: switch.turn_on
-    entity_id: switch.coffee
+    entity_id: switch.kitchen_coffee
 
 - alias: Turn on Coffee Machine WE
   trigger:
@@ -25,7 +25,7 @@
     - 'sun'
   action:
     service: switch.turn_on
-    entity_id: switch.coffee
+    entity_id: switch.kitchen_coffee
 
 - alias: Turn off Coffee Machine
   trigger:
@@ -41,7 +41,7 @@
     - 'fri'
   action:
     service: switch.turn_off
-    entity_id: switch.coffee
+    entity_id: switch.kitchen_coffee
 
 - alias: Turn off Coffee Machine WE
   trigger:
@@ -51,11 +51,9 @@
     platform: time
     weekday:
     - 'sat'
-    - 'sun'
   action:
-    service: notify.notify
-    data:
-      message: Something just happened, better take a look!
+    service: switch.turn_off
+    entity_id: switch.kitchen_coffee
 
 - alias: Turn on Outside light
   trigger:

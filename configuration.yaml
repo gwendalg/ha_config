@@ -36,6 +36,12 @@ apcupsd:
 thermostat:
   platform: nest
 
+vemono:
+  devices:
+  - host: hifipwr
+  - host: coffeepwr
+
+
 mqtt:
   embedded:
     listeners:

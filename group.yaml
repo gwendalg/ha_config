@@ -4,8 +4,8 @@ power_sensors:
     - sensor.10232_power1
     - sensor.10232_netmeter
     - sensor.10238_netmeter
-    - sensor.coffee
-    - sensor.hifi
+    - sensor.kitchen_coffee
+    - sensor.livingroom
 
 weather:
   entities:
@@ -25,8 +25,8 @@ kitchen:
   view: True
   entities:
     - media_player.castaudio
-    - switch.coffee
-    - switch.hifi
+    - switch.kitchen_coffee
+    - switch.livingroom
 
 mummy:
   view: True
@@ -47,7 +47,7 @@ basement:
     - media_player.home_theater
     - media_player.avr
     - media_player.projector
-    - media_player.plex
+    - media_player.nexus7_gen2
 
 backend_sensors:
   name: power
