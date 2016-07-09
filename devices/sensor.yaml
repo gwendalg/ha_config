@@ -13,17 +13,12 @@
     - temperature
     - apparent_temperature
 
-- name: UPS Voltage
+- name: Router UPS
   platform: apcupsd
-  type: linev
-
-- name: UPS Load
-  platform: apcupsd
-  type: loadpct
-
-- name: UPS Time Left
-  platform: apcupsd
-  type: timeleft
+  resources:
+    - linev
+    - loadpct
+    - timeleft
 
 - platform: nest
   monitored_conditions:
