@@ -6,6 +6,7 @@ power_sensors:
     - sensor.10238_netmeter
     - sensor.kitchen_coffee
     - sensor.livingroom
+    - sensor.ohmconnect_status
 
 weather:
   entities:

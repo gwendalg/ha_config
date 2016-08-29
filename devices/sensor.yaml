@@ -45,3 +45,6 @@
   resources:
   - power.mtu1
   - voltage.mtu1
+
+- platform: ohmconnect
+  id: D2Ve7lR3
