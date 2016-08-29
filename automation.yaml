@@ -3,7 +3,7 @@
     platform: time
     after: '06:45'
   condition:
-    platform: time
+    condition: time
     weekday:
     - 'mon'
     - 'tue'
@@ -19,7 +19,7 @@
     platform: time
     after: '07:30'
   condition:
-    platform: time
+    condition: time
     weekday:
     - 'sat'
     - 'sun'
@@ -32,7 +32,7 @@
     platform: time
     after: '08:00'
   condition:
-    platform: time
+    condition: time
     weekday:
     - 'mon'
     - 'tue'
@@ -48,7 +48,7 @@
     platform: time
     after: '09:45'
   condition:
-    platform: time
+    condition: time
     weekday:
     - 'sat'
   action:
@@ -61,7 +61,7 @@
     event: sunset
     offset: '+00:30:00'
   condition:
-    platform: time
+    condition: time
     before: '21:00'
   action:
     service: switch.turn_on

@@ -54,7 +54,7 @@ backend_sensors:
   entities:
     - sensor.ups_load
     - sensor.ups_time_left
-    - sensor.ups_voltage
+    - sensor.ups_input_voltage
     - sensor.10232_voltage1
 
 backend:
