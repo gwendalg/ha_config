@@ -1,7 +1,7 @@
 power_sensors:
   name: power
   entities:
-    - sensor.10232_power1
+    - sensor.10232_mtu1_power
     - sensor.10232_netmeter
     - sensor.10238_netmeter
     - sensor.kitchen_coffee
@@ -36,7 +36,7 @@ mummy:
     - sensor.home_temperature
     - binary_sensor.home_fan
     - binary_sensor.home_hvac_ac_state
-    - thermostat.home
+    - climate.home
  
 basement:
   view: True
@@ -49,6 +49,7 @@ basement:
     - media_player.avr
     - media_player.projector
     - media_player.nexus7_gen2
+    - sensor.plex
 
 backend_sensors:
   name: power
@@ -56,7 +57,7 @@ backend_sensors:
     - sensor.ups_load
     - sensor.ups_time_left
     - sensor.ups_input_voltage
-    - sensor.10232_voltage1
+    - sensor.10232_mtu1_voltage
 
 backend:
   view: True

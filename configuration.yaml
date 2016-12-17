@@ -36,13 +36,13 @@ nest:
 apcupsd:
   host: hippobeach
 
-thermostat:
+climate:
   platform: nest
 
 vemono:
-  devices:
-  - host: hifipwr
-  - host: coffeepwr
+  host:
+  - hifipwr
+  - coffeepwr
 
 
 mqtt:

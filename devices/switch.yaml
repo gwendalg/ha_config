@@ -1,51 +1,51 @@
 - platform: command_line
   switches:
     subwoofer:
-      oncmd: /usr/local/sbin/apc_set.sh apcgwen 2 1
-      offcmd: /usr/local/sbin/apc_set.sh apcgwen 2 2
-      statecmd: /usr/local/sbin/apc_get.sh apcgwen 2
+      command_on: /usr/local/sbin/apc_set.sh apcgwen 2 1
+      command_off: /usr/local/sbin/apc_set.sh apcgwen 2 2
+      command_state: /usr/local/sbin/apc_get.sh apcgwen 2
 
     projector:
-      oncmd: /usr/local/sbin/apc_set.sh apcgwen 1 1
-      offcmd: /usr/local/sbin/apc_set.sh apcgwen 1 2
-      statecmd: /usr/local/sbin/apc_get.sh apcgwen 1
+      command_on: /usr/local/sbin/apc_set.sh apcgwen 1 1
+      command_off: /usr/local/sbin/apc_set.sh apcgwen 1 2
+      command_state: /usr/local/sbin/apc_get.sh apcgwen 1
 
     q:
-      oncmd: /usr/local/sbin/apc_set.sh apcgwen 3 1
-      offcmd: /usr/local/sbin/apc_set.sh apcgwen 3 2
-      statecmd: /usr/local/sbin/apc_get.sh apcgwen 3
+      command_on: /usr/local/sbin/apc_set.sh apcgwen 3 1
+      command_off: /usr/local/sbin/apc_set.sh apcgwen 3 2
+      command_state: /usr/local/sbin/apc_get.sh apcgwen 3
 
     player:
-      oncmd: /usr/local/sbin/apc_set.sh apcgwen 4 1
-      offcmd: /usr/local/sbin/apc_set.sh apcgwen 4 2
-      statecmd: /usr/local/sbin/apc_get.sh apcgwen 4
+      command_on: /usr/local/sbin/apc_set.sh apcgwen 4 1
+      command_off: /usr/local/sbin/apc_set.sh apcgwen 4 2
+      command_state: /usr/local/sbin/apc_get.sh apcgwen 4
 
     amplifier:
-      oncmd: /usr/local/sbin/apc_set.sh apcgwen 5 1
-      offcmd: /usr/local/sbin/apc_set.sh apcgwen 5 2
-      statecmd: /usr/local/sbin/apc_get.sh apcgwen 5
+      command_on: /usr/local/sbin/apc_set.sh apcgwen 5 1
+      command_off: /usr/local/sbin/apc_set.sh apcgwen 5 2
+      command_state: /usr/local/sbin/apc_get.sh apcgwen 5
 
     monitor:
-      oncmd: /usr/local/sbin/apc_set.sh apcgwen 6 1
-      offcmd: /usr/local/sbin/apc_set.sh apcgwen 6 2
-      statecmd: /usr/local/sbin/apc_get.sh apcgwen 6
+      command_on: /usr/local/sbin/apc_set.sh apcgwen 6 1
+      command_off: /usr/local/sbin/apc_set.sh apcgwen 6 2
+      command_state: /usr/local/sbin/apc_get.sh apcgwen 6
 
     dvd:
-      oncmd: /usr/local/sbin/apc_set.sh apcgwen 7 1
-      offcmd: /usr/local/sbin/apc_set.sh apcgwen 7 2
-      statecmd: /usr/local/sbin/apc_get.sh apcgwen 7
+      command_on: /usr/local/sbin/apc_set.sh apcgwen 7 1
+      command_off: /usr/local/sbin/apc_set.sh apcgwen 7 2
+      command_state: /usr/local/sbin/apc_get.sh apcgwen 7
 
     mascot:
-      oncmd: /usr/local/sbin/apc_set.sh apcgwen 8 1
-      offcmd: /usr/local/sbin/apc_set.sh apcgwen 8 2
-      statecmd: /usr/local/sbin/apc_get.sh apcgwen 8
+      command_on: /usr/local/sbin/apc_set.sh apcgwen 8 1
+      command_off: /usr/local/sbin/apc_set.sh apcgwen 8 2
+      command_state: /usr/local/sbin/apc_get.sh apcgwen 8
 
     ggnas:
-      oncmd: /usr/local/sbin/ipmi_set.sh 192.168.1.142 on
-      offcmd: /usr/local/sbin/ipmi_set.sh 192.168.1.142 off
-      statecmd: /usr/local/sbin/ipmi_get.sh 192.168.1.142
+      command_on: /usr/local/sbin/ipmi_set.sh 192.168.1.142 on
+      command_off: /usr/local/sbin/ipmi_set.sh 192.168.1.142 off
+      command_state: /usr/local/sbin/ipmi_get.sh 192.168.1.142
 
     garden:
-      oncmd: /usr/local/sbin/x10_set.sh outside on
-      offcmd: /usr/local/sbin/x10_set.sh outside off
-      statecmd: /usr/local/sbin/x10_get.sh outside
+      command_on: /usr/local/sbin/x10_set.sh outside on
+      command_off: /usr/local/sbin/x10_set.sh outside off
+      command_state: /usr/local/sbin/x10_get.sh outside

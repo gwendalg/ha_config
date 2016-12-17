@@ -42,9 +42,10 @@
 - name: "10232"
   platform: ted5000
   host: ted5000
-  resources:
-  - power.mtu1
-  - voltage.mtu1
 
 - platform: ohmconnect
   id: D2Ve7lR3
+
+- platform: plex
+  host: ggnas
+  token: "L3FRPjyozFyLJN5Cmppi" 
