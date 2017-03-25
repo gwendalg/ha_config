@@ -32,6 +32,20 @@
   unit_of_measurement: "W"
   value_template: '{{ value_json.val | multiply(1000) }}'
 
+- name: "10232 Solar"
+  platform: mqtt
+  state_topic: "10232/energy/solarcity"
+  qos: 0
+  unit_of_measurement: "W"
+  value_template: '{{ value_json.power }}'
+
+- name: "10232 Solar Voltage"
+  platform: mqtt
+  state_topic: "10232/energy/solarcity"
+  qos: 0
+  unit_of_measurement: "V"
+  value_template: '{{ value_json.voltage | multiply(0.1) }}'
+
 - name: "10238 Netmeter"
   platform: mqtt
   state_topic: "10238/energy/demand"

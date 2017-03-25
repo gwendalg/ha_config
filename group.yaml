@@ -4,6 +4,7 @@ power_sensors:
     - sensor.10232_mtu1_power
     - sensor.10232_netmeter
     - sensor.10238_netmeter
+    - sensor.10232_solar
     - sensor.kitchen_coffee
     - sensor.livingroom
     - sensor.ohmconnect_status
@@ -59,6 +60,7 @@ backend_sensors:
     - sensor.ups_time_left
     - sensor.ups_input_voltage
     - sensor.10232_mtu1_voltage
+    - sensor.10232_solar_voltage
 
 backend:
   view: True
