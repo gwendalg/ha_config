@@ -45,7 +45,10 @@
       command_off: /usr/local/sbin/ipmi_set.sh 192.168.1.142 off
       command_state: /usr/local/sbin/ipmi_get.sh 192.168.1.142
 
-    garden:
-      command_on: /usr/local/sbin/x10_set.sh outside on
-      command_off: /usr/local/sbin/x10_set.sh outside off
-      command_state: /usr/local/sbin/x10_get.sh outside
+- platform: tplink
+  name: garden
+  host: 192.168.1.123
+
+- platform: tplink
+  name: christmas
+  host: 192.168.1.136

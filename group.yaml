@@ -28,6 +28,7 @@ kitchen:
     - media_player.castaudio
     - switch.kitchen_coffee
     - switch.livingroom
+    - switch.christmas
 
 mummy:
   view: True
