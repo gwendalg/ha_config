@@ -29,6 +29,9 @@ frontend:
 # Discover some devices automatically
 discovery:
 
+recorder:
+  purge_days: 5
+
 nest:
   client_id: !secret nest_product_id
   client_secret: !secret nest_product_secret
@@ -43,7 +46,6 @@ vemono:
   host:
   - hifipwr
   - coffeepwr
-
 
 mqtt:
   embedded:
