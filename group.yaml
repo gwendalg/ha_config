@@ -15,6 +15,7 @@ weather:
     - sensor.yr_temperature
     - sensor.yr_wind_direction
     - sensor.weather_summary
+    - sensor.tesla_model_s_5yjsa1e1xhf215220_temperature_sensor_outside
 
 default_view:
   view: True
@@ -47,11 +48,20 @@ basement:
     - switch.projector
     - switch.amplifier
     - switch.player
+    - switch.monitor
     - media_player.home_theater
     - media_player.avr
     - media_player.projector
     - media_player.nexus7_gen2
     - sensor.plex
+
+tesla:
+  view: True
+  entities:
+    - lock.tesla_model_s_5yjsa1e1xhf215220_door_lock
+    - device_tracker.tesla_model_s_5yjsa1e1xhf215220_location_tracker
+    - binary_sensor.tesla_model_s_5yjsa1e1xhf215220_charger_sensor
+    - sensor.tesla_model_s_5yjsa1e1xhf215220_battery_sensor
 
 backend_sensors:
   name: power
