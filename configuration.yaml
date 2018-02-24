@@ -56,8 +56,8 @@ mqtt:
             type: tcp
             bind: 0.0.0.0:8081
             ssl: 'on'
-            certfile: /home/pi/ssl/server.crt
-            keyfile: /home/pi/ssl/server.key
+            certfile: /home/pi/ssl/server.10y.crt
+            keyfile: /home/pi/ssl/server.10y.key
     timeout-disconnect-delay: 2
     auth:
         plugins: ['auth_file']
@@ -69,7 +69,7 @@ mqtt:
   keepalive: 60
   username: !secret mqtt_username
   password: !secret mqtt_password
-  certificate: /home/pi/ssl/server.crt
+  certificate: /home/pi/ssl/server.10y.crt
   protocol: 3.1.1
 
 
