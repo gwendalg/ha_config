@@ -5,7 +5,7 @@
     - windDirection
 
 - name: Forecast
-  platform: forecast
+  platform: darksky
   api_key: 960791c75c0a8e6fa3188d8de8465930
   monitored_conditions:
     - summary
