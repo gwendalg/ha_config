@@ -47,8 +47,12 @@
 
 - platform: tplink
   name: garden
-  host: 192.168.1.123
+  host: 192.168.1.62
 
 - platform: tplink
   name: christmas
-  host: 192.168.1.136
+  host: 192.168.1.61
+
+- platform: tplink
+  name: outdoor_christmas
+  host: 192.168.1.65

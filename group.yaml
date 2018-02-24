@@ -68,3 +68,4 @@ backend:
     - group.backend_sensors
     - switch.ggnas
     - switch.garden
+    - switch.outdoor_christmas
