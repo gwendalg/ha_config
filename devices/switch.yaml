@@ -41,9 +41,9 @@
       command_state: /usr/local/sbin/apc_get.sh apcgwen 8
 
     ggnas:
-      command_on: /usr/local/sbin/ipmi_set.sh 192.168.1.142 on
-      command_off: /usr/local/sbin/ipmi_set.sh 192.168.1.142 off
-      command_state: /usr/local/sbin/ipmi_get.sh 192.168.1.142
+      command_on: /usr/local/sbin/ipmi_set.sh ggnas_cons on
+      command_off: /usr/local/sbin/ipmi_set.sh ggnas_cons off
+      command_state: /usr/local/sbin/ipmi_get.sh ggnas_cons
 
 - platform: tplink
   name: garden
