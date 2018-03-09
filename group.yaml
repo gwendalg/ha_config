@@ -32,14 +32,13 @@ kitchen:
     - switch.livingroom
     - switch.christmas
 
-mummy:
+climate:
   view: True
   entities:
-    - sensor.home_target
-    - sensor.home_temperature
-    - binary_sensor.home_fan
-    - binary_sensor.home_hvac_ac_state
-    - climate.home
+    - climate.hallway
+    - climate.bedroom
+    - climate.basement
+    - climate.mummy
  
 basement:
   view: True
