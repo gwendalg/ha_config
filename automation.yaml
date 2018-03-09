@@ -2,7 +2,7 @@
   initial_state: true
   trigger:
     platform: time
-    at: '06:45:00'
+    at: '06:15:00'
   condition:
     condition: time
     weekday:
