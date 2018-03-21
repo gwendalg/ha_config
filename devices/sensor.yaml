@@ -62,4 +62,6 @@
 
 - platform: plex
   host: ggnas
-  token: "L3FRPjyozFyLJN5Cmppi" 
+  token: "L3FRPjyozFyLJN5Cmppi"
+
+- platform: amcrest

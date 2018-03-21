@@ -78,3 +78,4 @@ backend:
     - switch.ggnas
     - switch.garden
     - switch.outdoor_christmas
+    - camera.amcrest_camera

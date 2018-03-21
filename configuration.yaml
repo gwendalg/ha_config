@@ -78,9 +78,17 @@ tesla:
   username: gwendal@gmail.com
   password: !secret tesla_password
 
+amcrest:
+  host: frontgarage
+  username: admin
+  password: !secret amcrest_passowrd
+  sensors:
+      sdcard
+
 automation: !include automation.yaml
 media_player: !include devices/media_player.yaml
 sensor: !include devices/sensor.yaml
+camera: !include devices/camera.yaml
 binary_sensor: !include devices/binary_sensor.yaml
 switch: !include devices/switch.yaml
 #scene: !include scene.yaml
