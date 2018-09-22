@@ -54,6 +54,13 @@ basement:
     - media_player.nexus7_gen2
     - sensor.plex
 
+camera:
+  view: True
+  entities:
+    - camera.amcrest_camera
+    - camera.backyard
+    - camera.front_door
+
 tesla:
   view: True
   entities:
@@ -78,4 +85,3 @@ backend:
     - switch.ggnas
     - switch.garden
     - switch.outdoor_christmas
-    - camera.amcrest_camera
