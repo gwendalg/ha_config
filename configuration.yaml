@@ -40,7 +40,7 @@ nest:
   client_secret: !secret nest_product_secret
 
 apcupsd:
-  host: hippobeach
+  host: localhost
 
 climate:
   platform: nest
