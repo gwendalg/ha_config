@@ -1,10 +1,5 @@
 - platform: command_line
   switches:
-    subwoofer:
-      command_on: /usr/local/sbin/apc_set.sh apcgwen 7 1
-      command_off: /usr/local/sbin/apc_set.sh apcgwen 7 2
-      command_state: /usr/local/sbin/apc_get.sh apcgwen 7
-
     projector:
       command_on: /usr/local/sbin/apc_set.sh apcgwen 6 1
       command_off: /usr/local/sbin/apc_set.sh apcgwen 6 2
@@ -45,7 +40,7 @@
   host: 192.168.1.62
 
 - platform: tplink
-  name: christmas
+  name: subwoofer
   host: 192.168.1.61
 
 - platform: tplink
