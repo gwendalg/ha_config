@@ -53,7 +53,6 @@ basement:
     - media_player.avr
     - media_player.projector
     - media_player.nexus7_gen2
-    - sensor.plex
 
 camera:
   view: True
