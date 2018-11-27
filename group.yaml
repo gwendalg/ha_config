@@ -29,7 +29,7 @@ default_view:
 kitchen:
   view: True
   entities:
-    - media_player.castaudio
+    - media_player.livingroom
     - switch.kitchen_coffee
     - switch.livingroom
 
@@ -53,6 +53,8 @@ basement:
     - media_player.avr
     - media_player.projector
     - media_player.nexus7_gen2
+    - media_player.aftt
+    - media_player.basement_tv
 
 camera:
   view: True

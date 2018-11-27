@@ -80,6 +80,8 @@ mqtt:
   protocol: 3.1.1
   discovery: true
 
+cast:
+
 tesla:
   username: gwendal@gmail.com
   password: !secret tesla_password

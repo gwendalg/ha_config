@@ -1,4 +1,3 @@
-- platform: cast
 - name: avr
   platform: anthem
   port: /dev/ampli
