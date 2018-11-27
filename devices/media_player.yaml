@@ -2,8 +2,9 @@
 - name: avr
   platform: anthem
   port: /dev/ampli
+
 - name: projector
-  platform: epson
+  platform: epson-serial
   port: /dev/projector
 
 - name: cinema
