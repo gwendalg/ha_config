@@ -18,6 +18,8 @@ weather:
     - sensor.tesla_model_s_5yjsa1e1xhf215220_temperature_sensor_outside
 
 default_view:
+  icon: mdi:home
+  name: home
   view: True
   entities:
     - group.weather
