@@ -32,6 +32,7 @@ kitchen:
     - media_player.livingroom
     - switch.kitchen_coffee
     - switch.livingroom
+    - switch.indoor_christmas
 
 climate:
   view: True

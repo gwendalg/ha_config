@@ -44,5 +44,5 @@
   host: 192.168.1.61
 
 - platform: tplink
-  name: outdoor_christmas
+  name: indoor_christmas
   host: 192.168.1.65
