@@ -72,7 +72,7 @@
     service: switch.turn_on
     entity_id:
     - switch.garden
-    - switch.outddor_christmas
+    - switch.outdoor_christmas
 
 - alias: Turn off Outside light
   initial_state: true
@@ -83,6 +83,6 @@
     service: switch.turn_off
     entity_id:
     - switch.garden
-    - switch.outddor_christmas
+    - switch.outdoor_christmas
 
 
