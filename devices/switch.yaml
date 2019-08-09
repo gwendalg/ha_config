@@ -21,9 +21,9 @@
       command_state: /usr/local/sbin/apc_get.sh apcgwen 3
 
     dvd:
-      command_on: /usr/local/sbin/apc_set.sh apcgwen 2 1
-      command_off: /usr/local/sbin/apc_set.sh apcgwen 2 2
-      command_state: /usr/local/sbin/apc_get.sh apcgwen 2
+      command_on: /usr/local/sbin/apc_set.sh apcgwen 7 1
+      command_off: /usr/local/sbin/apc_set.sh apcgwen 7 2
+      command_state: /usr/local/sbin/apc_get.sh apcgwen 7
 
     mascot:
       command_on: /usr/local/sbin/apc_set.sh apcgwen 1 1
