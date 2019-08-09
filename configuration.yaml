@@ -78,7 +78,7 @@ mqtt:
   keepalive: 60
   username: !secret mqtt_username
   password: !secret mqtt_password
-  certificate: /home/pi/ssl/server.10y.crt
+  #certificate: /home/pi/ssl/server.10y.crt
   protocol: 3.1.1
   discovery: true
 
