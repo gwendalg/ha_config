@@ -13,7 +13,7 @@ cinema_on:
       data:
         entity_id: switch.projector
     - delay:
-        seconds: 10
+        seconds: 30
     - alias: Turn on avr
       service: media_player.turn_on
       data:
