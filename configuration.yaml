@@ -86,6 +86,9 @@ tesla:
   username: gwendal@gmail.com
   password: !secret tesla_password
 
+tplink:
+  discovery: true
+
 amcrest:
   host: frontgarage
   username: admin
