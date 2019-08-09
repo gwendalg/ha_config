@@ -13,8 +13,7 @@
     - temperature
     - apparent_temperature
 
-- name: Router UPS
-  platform: apcupsd
+- platform: apcupsd
   resources:
     - linev
     - loadpct
