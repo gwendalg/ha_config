@@ -15,7 +15,7 @@ weather:
     - sensor.yr_temperature
     - sensor.yr_wind_direction
     - sensor.weather_summary
-    - sensor.tesla_model_s_5yjsa1e1xhf215220_temperature_sensor_outside
+    - sensor.tesla_model_s_temperature_sensor_outside
 
 default_view:
   icon: mdi:home
@@ -67,10 +67,10 @@ camera:
 tesla:
   view: True
   entities:
-    - lock.tesla_model_s_5yjsa1e1xhf215220_door_lock
-    - device_tracker.tesla_model_s_5yjsa1e1xhf215220_location_tracker
-    - binary_sensor.tesla_model_s_5yjsa1e1xhf215220_charger_sensor
-    - sensor.tesla_model_s_5yjsa1e1xhf215220_battery_sensor
+    - lock.tesla_model_s_door_lock
+    - device_tracker.tesla_model_s_location_tracker
+    - binary_sensor.tesla_model_s_charger_sensor
+    - sensor.tesla_model_s_battery_sensor
 
 backend_sensors:
   name: power
