@@ -35,7 +35,7 @@ discovery:
 recorder:
 
 device_tracker:
-  - platform: owntracks
+  - platform: tesla
 
 nest:
   client_id: !secret nest_product_id
