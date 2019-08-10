@@ -81,10 +81,20 @@ backend_sensors:
     - sensor.10232_mtu1_voltage
     - sensor.10232_solar_voltage
 
+irrigation:
+  name: Irrigation
+  icon: mdi:water-pump
+  view: true
+  entities:
+  - switch.front
+  - switch.backyard
+  - switch.sidewalk
+
 backend:
   view: True
   entities:
     - group.backend_sensors
+    - group.irrigation
     - switch.ggnas
     - switch.garden
     - switch.outdoor_christmas

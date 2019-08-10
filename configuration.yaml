@@ -84,6 +84,9 @@ mqtt:
 
 cast:
 
+rachio:
+  api_key: !secret rachio_api_key
+
 tesla:
   username: gwendal@gmail.com
   password: !secret tesla_password
@@ -113,4 +116,5 @@ switch: !include devices/switch.yaml
 #scene: !include scene.yaml
 script: !include script.yaml
 group: !include group.yaml
+panel_iframe: !include panel.yaml
 
