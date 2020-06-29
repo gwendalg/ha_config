@@ -9,13 +9,17 @@ homeassistant:
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: America/Los_Angeles
   customize: !include customize.yaml
+  auth_providers:
+  - type: legacy_api_password
+    api_password: !secret api_password
+
+mobile_app:
 
 system_health:
           
 sun:
 
 http:
-  api_password: !secret api_password
 
 # View all events in a logbook
 logbook:
