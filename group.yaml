@@ -20,14 +20,12 @@ weather:
 default_view:
   icon: mdi:home
   name: home
-  view: True
   entities:
     - group.weather
     - group.power_sensors
     - media_player.cinema
 
 kitchen:
-  view: True
   entities:
     - media_player.livingroom
     - switch.kitchen_coffee
@@ -35,7 +33,6 @@ kitchen:
     - switch.indoor_christmas
 
 climate:
-  view: True
   entities:
     - climate.hallway
     - climate.bedroom
@@ -43,7 +40,6 @@ climate:
     - climate.mummy
  
 basement:
-  view: True
   entities:
     - switch.subwoofer
     - switch.projector
@@ -58,14 +54,12 @@ basement:
     - media_player.basement_tv
 
 camera:
-  view: True
   entities:
     - camera.amcrest_camera
     - camera.backyard
     - camera.front_door
 
 tesla:
-  view: True
   entities:
     - lock.tesla_model_s_door_lock
     - device_tracker.tesla_model_s_location_tracker
@@ -84,14 +78,12 @@ backend_sensors:
 irrigation:
   name: Irrigation
   icon: mdi:water-pump
-  view: true
   entities:
   - switch.front
   - switch.backyard
   - switch.sidewalk
 
 backend:
-  view: True
   entities:
     - group.backend_sensors
     - group.irrigation
