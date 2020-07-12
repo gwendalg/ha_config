@@ -1,4 +1,5 @@
 cinema_on:
+  mode: legacy
   sequence:
     - alias: Switch on subwoofer
       service: switch.turn_on
@@ -23,6 +24,7 @@ cinema_on:
       data:
         entity_id: media_player.projector
 cinema_off:
+  mode: legacy
   sequence:
     - alias: Turn off projector
       service: media_player.turn_off
