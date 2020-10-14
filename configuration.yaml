@@ -119,6 +119,15 @@ cover:
 #  default: warn
 #  logs:
 #          components.mqtt: debug
+google_assistant:
+  project_id: homeassistant-285504
+  service_account: !include homeassistant-285504-33956d45990c.json
+  report_state: true
+  exposed_domains:
+    - switch
+
+shell_command:
+  renew_ssl: certbot renew --quiet --no-self-upgrade --standalone --preferred-challenges tls-sni-01 --tls-sni-01-port 8123 --pre-hook "sudo systemctl stop home-assistant@homeassistant.service" --post-hook "sudo systemctl start home-assistant@homeassistant.service"
 
 automation: !include automation.yaml
 media_player: !include devices/media_player.yaml
