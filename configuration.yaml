@@ -24,6 +24,8 @@ system_health:
 sun:
 
 http:
+  ssl_certificate: /etc/letsencrypt/live/g1grignou.us.to/fullchain.pem
+  ssl_key: /etc/letsencrypt/live/g1grignou.us.to/privkey.pem
 
 # View all events in a logbook
 logbook:
