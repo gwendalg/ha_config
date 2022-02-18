@@ -8,6 +8,8 @@ homeassistant:
   elevation: 236
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: America/Los_Angeles
+  external_url: "https://g1grignou.us.to"
+  internal_url: "http://mascot.g1grignou.us.to:8123"
   customize: !include customize.yaml
   auth_providers:
   - type: homeassistant
