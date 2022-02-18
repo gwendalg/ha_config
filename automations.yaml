@@ -2,7 +2,7 @@
   initial_state: true
   trigger:
     platform: time
-    at: '06:15:00'
+    at: '06:45:00'
   condition:
     condition: time
     weekday:
@@ -13,7 +13,8 @@
     - 'fri'
   action:
     service: switch.turn_on
-    entity_id: switch.kitchen_coffee
+    entity_id:
+    - switch.coffee
 
 - alias: Turn on Coffee Machine WE
   initial_state: true
@@ -27,13 +28,14 @@
     - 'sun'
   action:
     service: switch.turn_on
-    entity_id: switch.kitchen_coffee
+    entity_id:
+    - switch.coffee
 
 - alias: Turn off Coffee Machine
   initial_state: true
   trigger:
     platform: time
-    at: '08:00:00'
+    at: '08:30:00'
   condition:
     condition: time
     weekday:
@@ -44,7 +46,8 @@
     - 'fri'
   action:
     service: switch.turn_off
-    entity_id: switch.kitchen_coffee
+    entity_id:
+    - switch.coffee
 
 - alias: Turn off Coffee Machine WE
   initial_state: true
@@ -57,7 +60,8 @@
     - 'sat'
   action:
     service: switch.turn_off
-    entity_id: switch.kitchen_coffee
+    entity_id:
+    - switch.coffee
 
 - alias: Turn on Outside light
   initial_state: true
@@ -70,7 +74,7 @@
   action:
     service: switch.turn_on
     entity_id:
-    - switch.outside_garden
+    - switch.outdoor_light
     - switch.outdoor_christmas
 
 - alias: Turn off Outside light
@@ -81,7 +85,7 @@
   action:
     service: switch.turn_off
     entity_id:
-    - switch.outside_garden
+    - switch.outdoor_light
     - switch.outdoor_christmas
 
 - alias: Turn on Christmas tree light
