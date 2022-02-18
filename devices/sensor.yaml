@@ -1,9 +1,3 @@
-# Prediction of weather
-- platform: yr
-  monitored_conditions:
-    - temperature
-    - windDirection
-
 - name: Forecast
   platform: darksky
   api_key: 960791c75c0a8e6fa3188d8de8465930
@@ -18,11 +12,6 @@
     - linev
     - loadpct
     - timeleft
-
-- platform: nest
-  monitored_conditions:
-    - 'temperature'
-    - 'target'
 
 - name: "10232 Netmeter"
   platform: mqtt
@@ -59,9 +48,9 @@
 - platform: ohmconnect
   id: D2Ve7lR3
 
-- platform: plex
-  host: ggnas
-  token: "5yw4eHrpkZmufBbkbvjV"
+# - platform: plex
+#   host: ggnas
+#   token: "5yw4eHrpkZmufBbkbvjV"
 
 - platform: amcrest
 

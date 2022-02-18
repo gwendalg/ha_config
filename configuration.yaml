@@ -46,20 +46,20 @@ discovery:
 
 recorder:
 
-nest:
-  client_id: !secret nest_product_id
-  client_secret: !secret nest_product_secret
+# nest:
+#   client_id: !secret nest_product_id
+#   client_secret: !secret nest_product_secret
 
 apcupsd:
   host: localhost
 
-climate:
-  platform: nest
+# climate:
+#    platform: nest
 
-vemono:
-  host:
-  - hifipwr
-  - coffeepwr
+#vemono:
+#  host:
+#  - hifipwr
+#  - coffeepwr
 
 mqtt:
 #  embedded:
@@ -91,17 +91,12 @@ mqtt:
   protocol: 3.1.1
   discovery: true
 
-cast:
+# deprecated
+# cast:
 
-rachio:
-  api_key: !secret rachio_api_key
-
-tesla:
-  username: gwendal@gmail.com
-  password: !secret tesla_password
-
-tplink:
-  discovery: true
+# deprecated
+# rachio:
+#  api_key: !secret rachio_api_key
 
 amcrest:
   host: frontgarage
@@ -111,11 +106,11 @@ amcrest:
   sensors:
       sdcard
 
-cover:
-  - platform: myq
-    username: gwendal@gmail.com
-    password: !secret myq_password
-    type: chamberlain
+# cover:
+#   - platform: myq
+#     username: gwendal@gmail.com
+#     password: !secret myq_password
+#     type: chamberlain
 
 #logger: 
 #  default: warn
