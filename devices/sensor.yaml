@@ -13,87 +13,16 @@
     - loadpct
     - timeleft
 
-- name: "10232 Netmeter"
-  platform: mqtt
-  state_topic: "10232/energy/demand"
-  state_class: measurement
-  device_class: power
-  qos: 0
-  unit_of_measurement: "kW"
-  value_template: '{{ value_json.val }}'
-
-- name: "10232 Netmeter Delivered"
-  platform: mqtt
-  state_topic: "10232/energy/delivered"
-  state_class: total_increasing
-  device_class: energy
-  qos: 0
-  unit_of_measurement: "kWh"
-  value_template: '{{ value_json.val }}'
-
-- name: "10232 Netmeter Received"
-  platform: mqtt
-  state_topic: "10232/energy/received"
-  state_class: total_increasing
-  device_class: energy
-  qos: 0
-  unit_of_measurement: "kWh"
-  value_template: '{{ value_json.val }}'
-
-- name: "10232 Solar"
-  platform: mqtt
-  state_topic: "10232/energy/solarcity"
-  state_class: measurement
-  device_class: power
-  qos: 0
-  unit_of_measurement: "W"
-  value_template: '{{ value_json.power }}'
-
-- name: "10232 Solar Voltage"
-  platform: mqtt
-  state_topic: "10232/energy/solarcity"
-  state_class: measurement
-  device_class: voltage
-  qos: 0
-  unit_of_measurement: "V"
-  value_template: '{{ value_json.voltage | multiply(0.1) }}'
-
-- name: "10238 Netmeter"
-  platform: mqtt
-  state_topic: "10238/energy/demand"
-  state_class: measurement
-  device_class: power
-  qos: 0
-  unit_of_measurement: "kW"
-  value_template: '{{ value_json.val }}'
-
-- name: "10238 Netmeter Delivered"
-  platform: mqtt
-  state_topic: "10238/energy/delivered"
-  state_class: total_increasing
-  device_class: energy
-  qos: 0
-  unit_of_measurement: "kWh"
-  value_template: '{{ value_json.val }}'
-
-- name: "10238 Netmeter Received"
-  platform: mqtt
-  state_topic: "10238/energy/received"
-  state_class: total_increasing
-  device_class: energy
-  qos: 0
-  unit_of_measurement: "kWh"
-  value_template: '{{ value_json.val }}'
-
 - name: "10232 TED"
   platform: ted5000
   host: ted5000
 
 - platform: integration
-  source: sensor.house_solar_panel
+  source: sensor.house_solar_power
   name: tesla_solar_panels_kwh
   unit_prefix: k
   unit_time: h
+  method: left
   round: 2
 
 - platform: integration
