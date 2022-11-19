@@ -155,8 +155,6 @@ amcrest:
   username: admin
   password: !secret amcrest_passowrd
   scan_interval: 60
-  sensors:
-      sdcard
 
 # cover:
 #   - platform: myq
