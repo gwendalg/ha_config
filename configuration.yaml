@@ -79,67 +79,65 @@ mqtt:
   #certificate: /home/pi/ssl/server.10y.crt
   sensor:
   - name: "10232 Netmeter"
+    unique_id: "10232-energey-power"
     state_topic: "10232/energy/demand"
     state_class: measurement
     device_class: power
-    qos: 0
-    unit_of_measurement: "kW"
+    unit_of_measurement: kW
     value_template: '{{ value_json.val }}'
   
   - name: "10232 Netmeter Delivered"
+    unique_id: "10232-energey-delivered"
     state_topic: "10232/energy/delivered"
     state_class: total_increasing
     device_class: energy
-    qos: 0
-    unit_of_measurement: "kWh"
+    unit_of_measurement: kWh
     value_template: '{{ value_json.val }}'
   
   - name: "10232 Netmeter Received"
+    unique_id: "10232-energey-received"
     state_topic: "10232/energy/received"
     state_class: total_increasing
     device_class: energy
-    qos: 0
-    unit_of_measurement: "kWh"
+    unit_of_measurement: kWh
     value_template: '{{ value_json.val }}'
   
   - name: "10232 Solar"
     state_topic: "solar/energy/solarcity"
     state_class: measurement
     device_class: power
-    qos: 0
-    unit_of_measurement: "W"
+    unit_of_measurement: W
     value_template: '{{ value_json.power }}'
   
   - name: "10232 Solar Voltage"
     state_topic: "solar/energy/solarcity"
     state_class: measurement
     device_class: voltage
-    qos: 0
-    unit_of_measurement: "V"
+    unit_of_measurement: V
     value_template: '{{ value_json.voltage | multiply(0.1) }}'
   
   - name: "10238 Netmeter"
+    unique_id: "10238-energey-power"
     state_topic: "10238/energy/demand"
     state_class: measurement
     device_class: power
-    qos: 0
-    unit_of_measurement: "kW"
+    unit_of_measurement: kW
     value_template: '{{ value_json.val }}'
   
   - name: "10238 Netmeter Delivered"
+    unique_id: "10238-energey-delivered"
     state_topic: "10238/energy/delivered"
     state_class: total_increasing
     device_class: energy
-    qos: 0
-    unit_of_measurement: "kWh"
+    unit_of_measurement: kWh
     value_template: '{{ value_json.val }}'
   
   - name: "10238 Netmeter Received"
+    unique_id: "10238-energey-received"
     state_topic: "10238/energy/received"
     state_class: total_increasing
     device_class: energy
-    qos: 0
-    unit_of_measurement: "kWh"
+    unit_of_measurement: kWh
     value_template: '{{ value_json.val }}'
 
 
