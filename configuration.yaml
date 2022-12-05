@@ -6,6 +6,7 @@ homeassistant:
   longitude: -122.054298
   unit_system: imperial
   elevation: 236
+  country: US
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: America/Los_Angeles
   external_url: "https://g1grignou.us.to"
