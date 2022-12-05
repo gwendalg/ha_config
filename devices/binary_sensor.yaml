@@ -1,6 +1,3 @@
-- platform: apcupsd
-  name: ups online
-
   #- platform: nest
   #monitored_conditions:
   #  - 'fan'
