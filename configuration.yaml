@@ -48,9 +48,6 @@ history:
 # Enables the frontend
 frontend:
 
-# Discover some devices automatically
-discovery:
-
 recorder:
 
 # nest:

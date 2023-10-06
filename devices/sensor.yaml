@@ -8,12 +8,6 @@
     - temperature
     - apparent_temperature
 
-- platform: apcupsd
-  resources:
-    - linev
-    - loadpct
-    - timeleft
-
 - name: "10232 TED"
   platform: ted5000
   host: ted5000
