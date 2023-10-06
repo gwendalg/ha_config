@@ -2,120 +2,136 @@
   initial_state: true
   trigger:
     platform: time
-    at: '06:15:00'
+    at: 06:15:00
   condition:
     condition: time
     weekday:
-    - 'mon'
-    - 'tue'
-    - 'wed'
-    - 'thu'
-    - 'fri'
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
   action:
     service: switch.turn_on
     entity_id:
     - switch.coffee
-
+  id: aff4204124c745849114a9767e23105b
 - alias: Turn on Coffee Machine WE
   initial_state: true
   trigger:
     platform: time
-    at: '07:30:00'
+    at: 07:30:00
   condition:
     condition: time
     weekday:
-    - 'sat'
-    - 'sun'
+    - sat
+    - sun
   action:
     service: switch.turn_on
     entity_id:
     - switch.coffee
-
+  id: 2992c9f884394596a5af29c9664bb510
 - alias: Turn off Coffee Machine
   initial_state: true
   trigger:
     platform: time
-    at: '08:00:00'
+    at: 08:00:00
   condition:
     condition: time
     weekday:
-    - 'mon'
-    - 'tue'
-    - 'wed'
-    - 'thu'
-    - 'fri'
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
   action:
     service: switch.turn_off
     entity_id:
     - switch.coffee
-
+  id: ff26b1ffcb704a9bbf8f1e052bdef649
 - alias: Turn off Coffee Machine WE
   initial_state: true
   trigger:
     platform: time
-    at: '09:45:00'
+    at: 09:45:00
   condition:
     condition: time
     weekday:
-    - 'sat'
+    - sat
   action:
     service: switch.turn_off
     entity_id:
     - switch.coffee
-
-- alias: Turn on Outside light
-  initial_state: true
+  id: 00759902fe2f4c1b907584942cef316a
+- id: e3e321d9f25746f882e003c417062482
+  alias: Turn on Outside light
   trigger:
-    platform: sun
+  - platform: sun
     event: sunset
   condition:
-    condition: time
+  - condition: time
     before: '21:00:00'
   action:
-    service: switch.turn_on
+  - service: switch.turn_on
     entity_id:
     - switch.outdoor_light
-    - switch.outdoor_christmas
-
-- alias: Turn off Outside light
+    - switch.entrance
+    - switch.garage_outside_light
   initial_state: true
+- id: 0004c2fd33e74d62af37ef445ed83952
+  alias: Turn off Outside light
   trigger:
-    platform: time
+  - platform: time
     at: '21:00:00'
   action:
-    service: switch.turn_off
+  - service: switch.turn_off
     entity_id:
     - switch.outdoor_light
-    - switch.outdoor_christmas
-
+    - switch.entrance
+    - switch.garage_outside_light
+  initial_state: true
 - alias: Turn on Christmas tree light
   initial_state: true
   trigger:
   - platform: time
-    at: '06:00:00'
+    at: 06:00:00
   - platform: time
     at: '16:00:00'
   action:
     service: switch.turn_on
     entity_id:
     - switch.indoor_christmas
-
+  id: 18dab1585594479ba17bd1fd80a4f108
 - alias: Turn off Christmas light
   initial_state: true
   trigger:
   - platform: time
-    at: '09:00:00'
+    at: 09:00:00
   - platform: time
     at: '22:00:00'
   action:
     service: switch.turn_off
     entity_id:
     - switch.indoor_christmas
-
-- alias: 'Auto Renew SSL Cert'
+  id: 364d734a1b144777a4827e81d0ed44ba
+- alias: Auto Renew SSL Cert
   trigger:
     platform: numeric_state
     entity_id: sensor.ssl_cert_expiry
     below: 29
   action:
     service: shell_command.renew_ssl
+  id: 6d3a9d00cabf4633bb2fe5afc1ecad7a
+- id: '1670424400721'
+  alias: 'Outside Christmas lights '
+  description: ''
+  trigger:
+  - platform: time
+    at: '23:00:00'
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 7ab6f60bc51240209deab0c739b36be7
+    entity_id: switch.outside_christmas
+    domain: switch
+  mode: single
