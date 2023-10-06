@@ -1,6 +1,7 @@
 - name: Forecast
-  platform: darksky
+  platform: pirateweather
   api_key: 960791c75c0a8e6fa3188d8de8465930
+  scan_interval: '00:15:00'
   monitored_conditions:
     - summary
     - precip_probability
