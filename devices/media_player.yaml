@@ -1,5 +1,5 @@
 - name: avr
-  platform: anthem
+  platform: anthem_serial
   port: /dev/ampli
 
 - name: projector
