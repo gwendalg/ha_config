@@ -161,12 +161,6 @@ amcrest:
   password: !secret amcrest_passowrd
   scan_interval: 60
 
-# cover:
-#   - platform: myq
-#     username: gwendal@gmail.com
-#     password: !secret myq_password
-#     type: chamberlain
-
 #logger: 
 #  default: warn
 #  logs:
