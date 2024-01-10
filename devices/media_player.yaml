@@ -3,7 +3,7 @@
   port: /dev/ampli
 
 - name: projector
-  platform: epson-serial
+  platform: epson_serial
   port: /dev/projector
 
 - name: cinema
