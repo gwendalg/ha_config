@@ -1,42 +1,47 @@
-- platform: command_line
-  switches:
-    projector:
-      command_on: /usr/local/sbin/apc_set.sh apcgwen 6 1
-      command_off: /usr/local/sbin/apc_set.sh apcgwen 6 2
-      command_state: /usr/local/sbin/apc_get.sh apcgwen 6
+- switch:
+    name: projector
+    command_on: /usr/local/sbin/apc_set.sh apcgwen 6 1
+    command_off: /usr/local/sbin/apc_set.sh apcgwen 6 2
+    command_state: /usr/local/sbin/apc_get.sh apcgwen 6
 
-    player:
-      command_on: /usr/local/sbin/apc_set.sh apcgwen 5 1
-      command_off: /usr/local/sbin/apc_set.sh apcgwen 5 2
-      command_state: /usr/local/sbin/apc_get.sh apcgwen 5
+- switch:
+    name: player
+    command_on: /usr/local/sbin/apc_set.sh apcgwen 5 1
+    command_off: /usr/local/sbin/apc_set.sh apcgwen 5 2
+    command_state: /usr/local/sbin/apc_get.sh apcgwen 5
 
-    amplifier:
-      command_on: /usr/local/sbin/apc_set.sh apcgwen 8 1
-      command_off: /usr/local/sbin/apc_set.sh apcgwen 8 2
-      command_state: /usr/local/sbin/apc_get.sh apcgwen 8
+- switch:
+    name: amplifier
+    command_on: /usr/local/sbin/apc_set.sh apcgwen 8 1
+    command_off: /usr/local/sbin/apc_set.sh apcgwen 8 2
+    command_state: /usr/local/sbin/apc_get.sh apcgwen 8
 
-    monitor:
-      command_on: /usr/local/sbin/apc_set.sh apcgwen 3 1
-      command_off: /usr/local/sbin/apc_set.sh apcgwen 3 2
-      command_state: /usr/local/sbin/apc_get.sh apcgwen 3
+- switch:
+    name: monitor
+    command_on: /usr/local/sbin/apc_set.sh apcgwen 3 1
+    command_off: /usr/local/sbin/apc_set.sh apcgwen 3 2
+    command_state: /usr/local/sbin/apc_get.sh apcgwen 3
 
-    dvd:
-      command_on: /usr/local/sbin/apc_set.sh apcgwen 7 1
-      command_off: /usr/local/sbin/apc_set.sh apcgwen 7 2
-      command_state: /usr/local/sbin/apc_get.sh apcgwen 7
+- switch:
+    name: dvd
+    command_on: /usr/local/sbin/apc_set.sh apcgwen 7 1
+    command_off: /usr/local/sbin/apc_set.sh apcgwen 7 2
+    command_state: /usr/local/sbin/apc_get.sh apcgwen 7
 
-    mascot:
-      command_on: /usr/local/sbin/apc_set.sh apcgwen 1 1
-      command_off: /usr/local/sbin/apc_set.sh apcgwen 1 2
-      command_state: /usr/local/sbin/apc_get.sh apcgwen 1
+- switch:
+    name: mascot
+    command_on: /usr/local/sbin/apc_set.sh apcgwen 1 1
+    command_off: /usr/local/sbin/apc_set.sh apcgwen 1 2
+    command_state: /usr/local/sbin/apc_get.sh apcgwen 1
 
-    subwoofer:
-      command_on: /usr/local/sbin/apc_set.sh apcgwen 2 1
-      command_off: /usr/local/sbin/apc_set.sh apcgwen 2 2
-      command_state: /usr/local/sbin/apc_get.sh apcgwen 2
+- switch:
+    name: subwoofer
+    command_on: /usr/local/sbin/apc_set.sh apcgwen 2 1
+    command_off: /usr/local/sbin/apc_set.sh apcgwen 2 2
+    command_state: /usr/local/sbin/apc_get.sh apcgwen 2
 
-    ggnas:
-      command_on: /usr/local/sbin/ipmi_set.sh ggnas_cons on
-      command_off: /usr/local/sbin/ipmi_set.sh ggnas_cons off
-      command_state: /usr/local/sbin/ipmi_get.sh ggnas_cons
-
+- switch:
+    name: ggnas
+    command_on: /usr/local/sbin/ipmi_set.sh ggnas_cons on
+    command_off: /usr/local/sbin/ipmi_set.sh ggnas_cons off
+    command_state: /usr/local/sbin/ipmi_get.sh ggnas_cons
