@@ -173,6 +173,8 @@ google_assistant:
   exposed_domains:
     - switch
 
+stream:
+
 shell_command:
   renew_ssl: certbot renew --quiet --no-self-upgrade --standalone --preferred-challenges tls-sni-01 --tls-sni-01-port 8123 --pre-hook "sudo systemctl stop home-assistant@homeassistant.service" --post-hook "sudo systemctl start home-assistant@homeassistant.service"
 
